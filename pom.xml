@@ -8,36 +8,46 @@
     <artifactId>fatjar_jetty</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <properties>
+        <jetty-server.version>9.2.3.v20140905</jetty-server.version>
+        <jetty-servlet.version>9.2.3.v20140905</jetty-servlet.version>
+        <jersey-server.version>2.7</jersey-server.version>
+        <jersey-container-servlet-core.version>2.7</jersey-container-servlet-core.version>
+        <jersey-container-jetty-http.version>2.7</jersey-container-jetty-http.version>
+        <jersey-media-moxy.version>2.7</jersey-media-moxy.version>
+    </properties>
+
+
     <dependencies>
         <dependency>
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-server</artifactId>
-            <version>9.2.3.v20140905</version>
+            <version>${jetty-server.version}</version>
         </dependency>
         <dependency>
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-servlet</artifactId>
-            <version>9.2.3.v20140905</version>
+            <version>${jetty-servlet.version}</version>
         </dependency>
         <dependency>
             <groupId>org.glassfish.jersey.core</groupId>
             <artifactId>jersey-server</artifactId>
-            <version>2.7</version>
+            <version>${jersey-server.version}</version>
         </dependency>
         <dependency>
             <groupId>org.glassfish.jersey.containers</groupId>
             <artifactId>jersey-container-servlet-core</artifactId>
-            <version>2.7</version>
+            <version>${jersey-container-servlet-core.version}</version>
         </dependency>
         <dependency>
             <groupId>org.glassfish.jersey.containers</groupId>
             <artifactId>jersey-container-jetty-http</artifactId>
-            <version>2.7</version>
+            <version>${jersey-container-jetty-http.version}</version>
         </dependency>
         <dependency>
             <groupId>org.glassfish.jersey.media</groupId>
             <artifactId>jersey-media-moxy</artifactId>
-            <version>2.7</version>
+            <version>${jersey-media-moxy.version}</version>
         </dependency>
     </dependencies>
     <build>
